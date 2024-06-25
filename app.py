@@ -7,7 +7,7 @@ from gekko import GEKKO
 import math
 import pandas as pd
 
-#Set up sidebar and parameters
+#Set up sidebar and parameters t
 st.set_page_config(page_title="L-Unit Optimisation Calculator",page_icon=":computer",layout="wide")
 
 df=pd.DataFrame({'Parameters':[23.0,18.0,20.0,0.5,0.15], 'Units':['kN/m3','kN/m3','degrees','','m']},
