@@ -7,6 +7,14 @@ from gekko import GEKKO
 import math
 import pandas as pd
 
+from stpyvista.utils import start_xvfb
+
+#The Community Cloud is a headless machine and Pyvista requires a virtual framebuffer to work. stpyvista.utils.start_xvfb checks if Xvfb is running and starts it if it was not.
+
+if "IS_XVFB_RUNNING" not in st.session_state:
+  start_xvfb()
+  st.session_state.IS_XVFB_RUNNING = True 
+
 #Set up sidebar and parameters t
 st.set_page_config(page_title="L-Unit Optimisation Calculator",page_icon=":computer",layout="wide")
 
