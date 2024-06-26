@@ -145,11 +145,11 @@ plotter.background_color = 'black'
 col1, col2 = st.columns([3,1])
 
 with col1:
-    stpyvista(plotter,
-              panel_kwargs=dict(
+    stpyvista(plotter
+              #panel_kwargs=dict(
                   #orientation_widget=True,
                   #interactive_orientation_widget=True
-                  )
+                  #)
               #key="pv_cube" #Pass a key to avoid re-rendering at each page change
     )
  
