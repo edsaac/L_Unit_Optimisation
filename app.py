@@ -162,6 +162,16 @@ with open("L-unit.dxf", "rb") as file:
         file_name="L-unit.dxf",
         mime="application/dxf"
     )
+
+with open("mesh_v1.stl", "rb") as file:
+    dxf_bytes = file.read()
+
+    st.download_button(
+        label="Download stl",
+        data=dxf_bytes,
+        file_name="mesh_v1.stl",
+        mime="application/octet-stream"
+    )
     
 with col2:
     st.dataframe(l_df)
