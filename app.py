@@ -39,7 +39,7 @@ with st.sidebar:
     st.subheader('Author')
     st.write('''
              - Tom Cartigny
-             - Git Hub: [@TomCarts/Beam/Calculator](https://github.com/TomCarts/Beam_Calculator.git)
+             - Git Hub: [@TomCarts/L_Unit_Optimisation](https://github.com/TomCarts/L_Unit_Optimisation.git)
              ''')
 
 #Streamlit Page Layout
